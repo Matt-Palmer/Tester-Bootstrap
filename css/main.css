@@ -1,0 +1,12 @@
+.navbar-header .navbar-brand{
+	color: #FFDA00;
+}
+
+.nav.navbar-nav li a:hover{
+	background-color: #FFDA00;
+	color: black;
+}
+
+.nav.navbar-nav li a{
+	color: #FFDA00;
+}
