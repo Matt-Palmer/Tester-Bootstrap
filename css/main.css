@@ -5,6 +5,7 @@
 .nav.navbar-nav li a:hover{
 	background-color: #FFDA00;
 	color: black;
+	border-radius: 4px;
 }
 
 .nav.navbar-nav li a{
