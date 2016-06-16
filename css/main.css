@@ -1,12 +1,7 @@
 h2{
 	color: white;
-	position: absolute;
-	top: 37%;
-	left: 0;
 	font-size: 90px;
-	width: 100%;
-	text-align: center;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 
 .navbar-brand{
@@ -100,7 +95,7 @@ h2{
 
 #work-experience-bg-img{
 	position: relative;
-	background: url("../images/woods.jpg") no-repeat center fixed;
+	background: url("../images/woods.jpg") no-repeat left top fixed;
 }
 
 .overlay{
