@@ -1,3 +1,14 @@
+h2{
+	color: white;
+	position: absolute;
+	top: 37%;
+	left: 0;
+	font-size: 90px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
 .navbar-brand{
 	border-right: 2px solid #FFDA00;
 	padding: 8px 15px;
@@ -50,6 +61,25 @@
 	border-radius: 4px;
 }
 
+.nav.navbar-nav .contact-link{
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.nav.navbar-nav .contact-link a{ 
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.nav.navbar-nav .contact-link a:hover,
+.nav.navbar-nav .contact-link a:focus{ 
+    background-color: transparent;
+    outline: none;
+}
+
 .nav-active{
 	background-color: #6B6A6A;
 	color: black;
@@ -60,10 +90,17 @@
 	height: 500px;
 	margin: 0;
 	padding: 48px 0 0;
-	background-image: url("../images/new-york-skyline.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url("../images/new-york-skyline.jpg") no-repeat left top fixed;
+}
+
+#my-work-bg-img{
+	position: relative;
+	background: url("../images/park.jpg") no-repeat left top fixed;
+}
+
+#work-experience-bg-img{
+	position: relative;
+	background: url("../images/woods.jpg") no-repeat center fixed;
 }
 
 .overlay{
@@ -78,19 +115,19 @@
 .jumbotron-content{
 	position: relative;
 	top: 100px;
-	z-index: 150;
+	z-index: 1;
 	color: white;
 }
 
 .jumbotron-content .jumbotron-description{
-	width: 40%;
+	width: 50%;
 	max-height: 300px;
 	margin: 0 auto;
 	padding-top: 30px;
 }
 
 .row{
-	padding: 20px;
+	padding: 20px 20px 20px;
 }
 
 .section-heading{
@@ -147,6 +184,76 @@ section:nth-child(even){
 .link-description{
 	width: 40%;
 	margin: 0 auto;
-	padding-bottom: 40px;
 }
+
+.contact-link li{
+    width: 500px;
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+.contact-link li img{
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #333;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-link li a{
+    float: left;
+    line-height: 50px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-link a img:hover{
+	text-decoration: none;
+	color: #333;
+	box-shadow: 0 0 5px black;
+}
+
+@media (max-width: 770px){
+
+	h1{
+		font-size: 42px;
+	}
+
+	.jumbotron-content .jumbotron-description{
+		width: 60%;
+	}
+
+	.portfolio-link,
+	.portfolio-link img{
+		height: 150px;
+		width: 150px;
+	}
+
+	.link-description{
+		width: 90%;
+	}
+
+	.small-device{
+		width: 50%;
+		float: left;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
