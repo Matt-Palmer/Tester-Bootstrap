@@ -1,7 +1,12 @@
 h2{
 	color: white;
+	position: absolute;
+	top: 37%;
+	left: 0;
 	font-size: 90px;
-	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .navbar-brand{
@@ -82,20 +87,21 @@ h2{
 }
 
 .jumbotron{
+	position: relative;
 	height: 500px;
 	margin: 0;
 	padding: 48px 0 0;
-	background: url("../images/new-york-skyline.jpg") no-repeat left top fixed;
+	background: url("../images/new-york-skyline.jpg") no-repeat center top fixed;
 }
 
 #my-work-bg-img{
 	position: relative;
-	background: url("../images/park.jpg") no-repeat left top fixed;
+	background: url("../images/park.jpg") no-repeat center center fixed;
 }
 
 #work-experience-bg-img{
 	position: relative;
-	background: url("../images/woods.jpg") no-repeat left top fixed;
+	background: url("../images/woods.jpg") no-repeat center center fixed;
 }
 
 .overlay{
@@ -107,6 +113,7 @@ h2{
 	opacity: 0.6;
 }
 
+.section-heading,
 .jumbotron-content{
 	position: relative;
 	top: 100px;
@@ -121,12 +128,12 @@ h2{
 	padding-top: 30px;
 }
 
-.row{
-	padding: 20px 20px 20px;
+.section-heading{
+	top: 29%;
 }
 
-.section-heading{
-	padding: 40px 0 20px 30px;
+.row{
+	padding: 20px 20px 20px;
 }
 
 section:nth-child(odd){
@@ -212,20 +219,34 @@ section:nth-child(even){
 	box-shadow: 0 0 5px black;
 }
 
-@media (max-width: 770px){
+
+
+@media (max-width: 435px){
 
 	h1{
-		font-size: 42px;
+		font-size: 40px;
+		margin: 10px 0 -10px;
+	}
+
+	h2{
+		font-size: 60px;
+	}
+
+	.section-heading{
+		top: 33%;
+	}
+	.jumbotron-content{
+		top: 0;
 	}
 
 	.jumbotron-content .jumbotron-description{
-		width: 60%;
+		width: 95%;
 	}
 
 	.portfolio-link,
 	.portfolio-link img{
-		height: 150px;
-		width: 150px;
+		height: 200px;
+		width: 200px;
 	}
 
 	.link-description{
@@ -235,6 +256,31 @@ section:nth-child(even){
 	.small-device{
 		width: 50%;
 		float: left;
+	}
+
+	.overlay{
+		height: 350px;
+	}
+
+	.jumbotron{
+		height: 350px;
+		background: url("../images/new-york-skyline.jpg") no-repeat center center scroll;
+	}
+
+	#my-work-bg-img{
+		background: url("../images/park.jpg") no-repeat center center scroll;
+	}
+
+	#work-experience-bg-img{
+		background: url("../images/woods.jpg") no-repeat center center scroll;
+	}
+
+	.margin-top{
+		margin-top: 40px;
+	}
+
+	.padding-top-zero{
+		padding-top: 0;
 	}
 
 }
