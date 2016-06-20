@@ -91,7 +91,8 @@ h2{
 	height: 500px;
 	margin: 0;
 	padding: 48px 0 0;
-	background: url("../images/new-york-skyline.jpg") no-repeat center top fixed;
+	background: url("../images/new-york-skyline.jpg") no-repeat center center fixed;
+	background-size: cover;
 }
 
 #my-work-bg-img{
@@ -113,10 +114,19 @@ h2{
 	opacity: 0.6;
 }
 
+.section-heading{
+
+	top: 100px;
+}
+
+.jumbotron-content{
+
+	top: 70px;
+}
+
 .section-heading,
 .jumbotron-content{
 	position: relative;
-	top: 100px;
 	z-index: 1;
 	color: white;
 }
@@ -219,7 +229,29 @@ section:nth-child(even){
 	box-shadow: 0 0 5px black;
 }
 
+@media (max-width: 767px){
 
+	h1{
+		font-size: 50px;
+	}
+
+	h2{
+		font-size: 75px;
+	}
+
+	.jumbotron-content{
+		top: 35px;
+	}
+
+	.margin-top{
+		margin-top: 40px;
+	}
+
+	.jumbotron-content .jumbotron-description{
+		width: 65%;
+	}
+
+}
 
 @media (max-width: 435px){
 
@@ -284,6 +316,8 @@ section:nth-child(even){
 	}
 
 }
+
+
 
 
 
