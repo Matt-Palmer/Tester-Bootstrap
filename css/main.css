@@ -15,18 +15,22 @@ h3{
 	padding: 20px 0;
 }
 
+.background{
+	background: linear-gradient(to bottom right, #499bea, white);
+}
+
 .navbar-brand{
-	border-right: 2px solid #FFDA00;
+	border-right: 2px solid black;
 	padding: 8px 15px;
 }
 
 .navbar-header .navbar-brand:hover, 
 .navbar-brand .logo:hover{
-	color: #FFDA00
+	color: black;
 }
 
 .navbar-brand .logo{
-	border: 2px solid #FFDA00;
+	border: 2px solid black;
 	border-radius: 4px;
 	padding: 5px 5px;
 }
@@ -36,7 +40,7 @@ h3{
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #FFDA00;
+    background-color: gray;
 }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -44,25 +48,25 @@ h3{
 }
 
 .navbar-inverse .navbar-toggle:hover{
-	background-color: #FFDA00;
+	background-color: gray;
 }
 
 .navbar-header .navbar-brand{
-	color: #FFDA00;
+	color: black;
 }
 
 .nav.navbar-nav{
-	border-left: 2px solid #FFDA00;
+	border-left: 2px solid black;
 	padding-left: 5px;
 }
 
 .nav.navbar-nav li a,
 .nav.navbar-nav li a:focus{
-	color: #FFDA00;
+	color: black;
 }
 
 .nav.navbar-nav li a:hover{
-	background-color: #FFDA00;
+	background-color: lightgray;
 	color: #333;
 	border-radius: 4px;
 }
@@ -87,7 +91,7 @@ h3{
 }
 
 .nav-active{
-	background-color: #6B6A6A;
+	background-color: white;
 	color: black;
 	border-radius: 4px;
 }
@@ -153,8 +157,8 @@ h3{
 }
 
 section:nth-child(even){
-	background-color: #333;
-	color: #FFDA00;
+	background: linear-gradient(to bottom right, #499bea, white);
+	color: black;
 }
 
 .item{
@@ -166,8 +170,8 @@ section:nth-child(even){
 }
 
 section:nth-child(odd){
-	background-color: #9D9C9C;
-	color: #333;
+	background-color: white;
+	color: black;
 }
 
 .carousel-inner .item img{
